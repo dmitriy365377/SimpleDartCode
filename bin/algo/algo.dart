@@ -1,5 +1,3 @@
-
-
 // num opposite(num n) {
 //   print(n * -1);
 // }
@@ -25,21 +23,26 @@
 //   return b;
 // }
 
-
 // import 'dart:svg';
 
-int getCount(String inputStr) {
-  dynamic count = 0;
-  final vowels = ['a', 'e', 'i', 'o', 'u'];
-  inputStr.runes.forEach((int rune) {
-    var character = new String.fromCharCode(rune);
-    if (vowels.contains(character)) {
-      count++;
-    }
-  }); 
-  return count;
+// int getCount(String inputStr) {
+//   dynamic count = 0;
+//   final vowels = ['a', 'e', 'i', 'o', 'u'];
+//   inputStr.runes.forEach((int rune) {
+//     var character = new String.fromCharCode(rune);
+//     if (vowels.contains(character)) {
+//       count++;
+//     }
+//   });
+//   return count;
+// }
+
+int litres(num time) {
+  var litresOfWaterPerHour = 0.5;
+  double liters = time * litresOfWaterPerHour;
+  return liters.floor();
 }
 
 void main() {
-  getCount("abcde");
+  print(litres(11.8));
 }
