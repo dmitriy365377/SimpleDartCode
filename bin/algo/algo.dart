@@ -37,12 +37,19 @@
 //   return count;
 // }
 
-int litres(num time) {
-  var litresOfWaterPerHour = 0.5;
-  double liters = time * litresOfWaterPerHour;
-  return liters.floor();
+// int litres(num time) {
+//   var litresOfWaterPerHour = 0.5;
+//   double liters = time * litresOfWaterPerHour;
+//   return liters.floor();
+// }
+
+String solution(str) {
+  dynamic reverse = str.split('').reversed.join();
+  print(reverse);
+  return  reverse;
 }
 
+
 void main() {
-  print(litres(11.8));
+   solution('world');
 }
